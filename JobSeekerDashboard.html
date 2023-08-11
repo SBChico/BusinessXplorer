@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Job Seeker Dashboard</title>
+</head>
+<body>
+    <div class="dashboard-container">
+        <div class="profile-section">
+            <h1>Welcome, [Job Seeker Name]!</h1>
+            <!-- Add other profile details here -->
+            <h2>Your Skills:</h2>
+            <!-- List existing skills here -->
+            <form action="/add-skill" method="post" class="add-skill-form">
+                <input type="text" name="newSkill" placeholder="Add a new skill">
+                <button type="submit" class="btn">Add Skill</button>
+            </form>
+            <a href="/edit-profile" class="btn">Edit Profile</a>
+        </div>
+        <div class="matches-section">
+            <h2>Matched Companies:</h2>
+            <!-- Dynamically populate this section with matched companies -->
+            <!-- Repeat the company-card div for each matched company -->
+        </div>
+    </div>
+</body>
+</html>
